@@ -1,31 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compound Assignment Operators</title>
+    <title>Burrgerr</title>
+    <link rel="icon" href="burger_favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; 
+            color: #333333; 
+        }
+
+        header {
+            background-color: #FFD700; 
+            color: #333333; 
+            text-align: center;
+            padding: 2rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background: #FFB300; 
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #333333;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .highlight {
+            color: white; 
+            font-weight: bold;
+        }
+
+        .banner-image {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #FFECB3; 
+            color: #333333;
+        }
+
+        table td {
+            background-color: #FFF8E1;
+
+        ul {
+            list-style-type: square;
+        }
+
+     
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Using +=, -=, *=, /= Operators</h1>
-    <p id="output"></p>
+    <header>
+        <h1>Burrgerr</h1>
+        <p class="highlight">Juicy handcrafted burgers</p>
+        <img src="./pngwing.com_1_.png" alt="Burrgerr Banner" class="banner-image">
+    </header>
 
-    <script>
-        let value = 10; // Start with 10
-        let result = `Initial value: ${value}<br>`;
+    <nav>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-        value += 5; // Add 5
-        result += `After += 5: ${value}<br>`;
+    <div class="container">
+        <section id="about">
+            <h2>About Burrgerr</h2>
+            <p>
+                Burrgerr is your goto spot for delicious burgers made from the finest ingredients.
+                <span class="highlight">Taste the best burgers in town!</span>
+            </p>
+            
+        </section>
 
-        value -= 3; // Subtract 3
-        result += `After -= 3: ${value}<br>`;
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <p>Check out our variety of mouth-watering burgers </p>
+            <ul>
+                <li>Classic Cheeseburger</li>
+                <li>BBQ Bacon Burger</li>
+                <li>Spicy Jalapeño Burger</li>
+               
+            </ul>
 
-        value *= 2; // Multiply by 2
-        result += `After *= 2: ${value}<br>`;
+            <h3>Top Picks</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Classic Cheeseburger</td>
+                        <td>A timeless favorite with melted cheese, lettuce, and tomato.</td>
+                        <td>€8</td>
+                    </tr>
+                    <tr>
+                        <td>BBQ Bacon Burger</td>
+                        <td>Smoky BBQ sauce, crispy bacon, and cheddar cheese.</td>
+                        <td>€10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-        value /= 4; // Divide by 4
-        result += `After /= 4: ${value}<br>`;
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p> <a href="mailto:info@burrgerr.com">Email</a>.</p>
+           
+        </section>
+        <h3> Making video</h3>
+        <iframe src= "https://www.youtube.com/embed/HS24PywYlxg">     </iframe>
 
-        document.getElementById("output").innerHTML = result;
+    </div>
+
+    
+  <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            alert("Welcome!");
+        });
     </script>
 </body>
+
 </html>
